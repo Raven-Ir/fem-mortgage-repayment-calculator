@@ -12,6 +12,14 @@ module.exports = {
       options: {
         "icon": "src/images/favicon-32x32.png"
       }
+    },
+    {
+      resolve: 'gatsby-plugin-react-svg',
+      options: {
+        rule: {
+          include: /images/
+        }
+      }
     }
   ]
 };

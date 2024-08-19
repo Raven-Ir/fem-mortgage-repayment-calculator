@@ -4,37 +4,42 @@ import General from '../components/General'
 const IndexPage = () => {
   return (
     <>
-      <div className="">
-        <div>
-          <h1>Mortgage Calculator</h1>
-          <button>Clear All</button>
+    <div className="flex items-center justify-center">
+      <div className="flex w-3/4 h-3/4">
+          <div className="">
+            <h1>Mortgage Calculator</h1>
+            <button>Clear All</button>
 
-          <form>
-            <label>Mortgage Amount</label>
-            <input type="text"></input>
-            
-            <label>Mortgage Term</label>
-            <input type="number"></input>
+            <form>
+              <label for="mamount">Mortgage Amount</label>
+              
+              <input type="text" id="mamount"></input>
+              
+              <label for="mterm">Mortgage Term</label>
+              <br/>
+              <input type="number" id="mterm"></input>
 
-            <label>Interest Rate</label>
-            <input type="number"></input>
+              <label for="mrate">Interest Rate</label>
+              <input type="number" id="mrate"></input>
 
-            <label>Mortgage Type</label>
+              <br/>
+              <label>Mortgage Type</label>
+              <br />
+              <input type="radio" id="repayment" name="mortgate-type" value="repayment" />
+              <label>Repayment</label>
+              <br />
+              <input type="radio" id="interest" name="mortgate-type" value="interest-only" />
+              <label>Interest Only</label>
+              <br/>
+              <button type="sumbit">Calculate Repayments</button>
+            </form>
 
-            <input type="radio" id="repayment" name="mortgate-type" value="repayment" />
-            <label>Repayment</label>
-            <input type="radio" id="interest" name="mortgate-type" value="interest-only" />
-            <label>Interest Only</label>
-
-            <button type="sumbit">Calculator Repayments</button>
-          </form>
-
-        </div>
-        <div>
-          <General />
+          </div>
+          <div>
+            <General />
+          </div>
         </div>
       </div>
-     
     </>
   )
 }

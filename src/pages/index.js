@@ -4,8 +4,8 @@ import General from '../components/General'
 const IndexPage = () => {
   return (
     <>
-    <div className="flex items-center justify-center">
-      <div className="flex w-3/4 h-3/4">
+    <div className="flex items-center justify-center min-h-screen">
+      <div className="flex ">
           <div className="">
             <h1>Mortgage Calculator</h1>
             <button>Clear All</button>
@@ -31,7 +31,7 @@ const IndexPage = () => {
               <input type="radio" id="interest" name="mortgate-type" value="interest-only" />
               <label>Interest Only</label>
               <br/>
-              <button type="sumbit">Calculate Repayments</button>
+              <button type="submit">Calculate Repayments</button>
             </form>
 
           </div>

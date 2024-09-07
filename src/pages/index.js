@@ -6,23 +6,28 @@ const IndexPage = () => {
     <>
     <div className="flex items-center justify-center min-h-screen">
       <div className="flex ">
-          <div className="">
-            <h1>Mortgage Calculator</h1>
-            <button>Clear All</button>
+          <div className="p-2 m-2">
+            <div className="flex justify-between">
+              <h1 className="text-2xl pr-2 font-bold">Mortgage Calculator</h1>
+              <button>Clear All</button>
+            </div>
 
-            <form>
-              <label for="mamount">Mortgage Amount</label>
-              
-              <input type="text" id="mamount"></input>
-              
-              <label for="mterm">Mortgage Term</label>
-              <br/>
-              <input type="number" id="mterm"></input>
-
-              <label for="mrate">Interest Rate</label>
-              <input type="number" id="mrate"></input>
-
-              <br/>
+            
+            <form className="pt-2">
+              <table>
+                <tr>
+                  <td><label for="mamount">Mortgage Amount</label></td>
+                  <td><input type="text" id="mamount"></input></td>
+                </tr>
+                <tr className="">
+                  <td><label for="mterm">Mortgage Term</label></td>
+                  <td><label for="mrate">Interest Rate</label></td>
+                </tr>
+                <tr>
+                  <td><input type="number" id="mterm"></input></td>
+                  <td><input type="number" id="mrate"></input></td> 
+                </tr>
+              <tr></tr>
               <label>Mortgage Type</label>
               <br />
               <input type="radio" id="repayment" name="mortgate-type" value="repayment" />
@@ -30,8 +35,10 @@ const IndexPage = () => {
               <br />
               <input type="radio" id="interest" name="mortgate-type" value="interest-only" />
               <label>Interest Only</label>
-              <br/>
-              <button type="submit">Calculate Repayments</button>
+              </table>
+              
+              <button type="submit"
+                className=" border-2 ">Calculate Repayments</button>
             </form>
 
           </div>

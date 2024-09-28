@@ -4,7 +4,7 @@ import General from '../components/General'
 const IndexPage = () => {
   return (
     <>
-    <div className="flex items-center justify-center min-h-screen">
+    <div className="flex items-center justify-center min-h-screen max-h-[sc]">
       <div className="flex ">
           <div className="p-2 m-2">
             <div className="flex justify-between">
@@ -38,7 +38,7 @@ const IndexPage = () => {
               </table>
               
               <button type="submit"
-                className=" border-2 ">Calculate Repayments</button>
+                className="rounded-3xl mt-2 p-2 bg-[#a6bd56]">Calculate Repayments</button>
             </form>
 
           </div>
